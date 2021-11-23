@@ -43,6 +43,9 @@ app.get('/', (req, res) => {
         res.json({ 'nb_load': result });
     });
 });
-
-  
         
+module.exports = {
+    initDatabase,
+    get_nb_load,
+    add_hit_reload
+}

@@ -7,10 +7,6 @@ const database = mysql.createConnection({
     database: process.env.DB_NAME
 });
 
-const Flask = require('Flask');
-
-app = Flask(__name__);
-
 app.get('/init', (req, res) => {
     const sqlQuery =  'CREATE TABLE IF NOT EXISTS nb_load(id int AUTO_INCREMENT, log DATE_TIME ), PRIMARY KEY(id))';
 

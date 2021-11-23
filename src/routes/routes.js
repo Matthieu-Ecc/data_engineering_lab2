@@ -4,9 +4,9 @@ const { body } = require('express-validator');
 const router = new express.Router();
 
 router.get('/init', controller.initDatabase);
-router.get('/', controller.getnb_load);
+router.get('/', controller.get_nb_load);
 router.post('/hit_reload',
-    controller.addhit_reload    
+    controller.add_hit_reload    
 );
 
 module.exports = router;
